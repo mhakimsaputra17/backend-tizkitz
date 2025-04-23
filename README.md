@@ -23,7 +23,7 @@ A RESTful API built with Gin framework for a movie ticket booking system.
 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/mhakimsaputra17/backend-tizkitz
 cd routing_gin
 ```
 
