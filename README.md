@@ -16,7 +16,7 @@ A RESTful API built with Gin framework for a movie ticket booking system.
 
 - Go 1.16 or higher
 - [Gin framework](https://github.com/gin-gonic/gin)
-- [Air](https://github.com/cosmtrek/air) for hot reload during development
+- [Air](https://github.com/air-verse/air) for hot reload during development
 
 ## Installation
 
@@ -32,13 +32,12 @@ cd routing_gin
 ```bash
 go mod init routing_gin
 go get -u github.com/gin-gonic/gin
-go get -u github.com/cosmtrek/air
 ```
 
 3. Install Air globally (if not already installed)
 
 ```bash
-go install github.com/cosmtrek/air@latest
+go install github.com/air-verse/air@latest
 ```
 
 ## Project Structure
@@ -58,22 +57,6 @@ air
 ```
 
 Air will watch for file changes and automatically rebuild and restart your application.
-
-### Air Configuration
-
-Create a `.air.toml` file in your project root (optional):
-
-```toml
-root = "."
-tmp_dir = "tmp"
-[build]
-  cmd = "go build -o ./tmp/main ."
-  bin = "./tmp/main"
-  delay = 1000
-  exclude_dir = ["assets", "tmp", "vendor"]
-  include_ext = ["go", "tpl", "tmpl", "html"]
-  exclude_regex = ["_test\\.go"]
-```
 
 ## API Endpoints
 
